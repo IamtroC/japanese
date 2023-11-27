@@ -15,10 +15,10 @@
 <body>
     <div style="margin-left: auto; margin-right: auto; border: 30px solid #333333; border-radius: 70px;">
         <button style="font-size: 40px; margin-left: 50px; margin-top: 40px;">TOP</button>
-        <button id="English_button" style="margin-left: 600px; font-size: 20px; height: 40px;" onclick="Eng_tra()">English</button>
-        <button id="Japanese_button" style="font-size: 20px; height: 40px;" onclick="Ja_tra()">日本語</button>
-        <button id="Chinece_button" style="font-size: 20px; height: 40px;" onclick="Chi_tra()">中文</button>
-        <button id="Korean_button" style="font-size: 20px; height: 40px;" onclick="Ko_tra()">한국어</button>
+        <button id="English_button" style="margin-left: 600px; font-size: 20px; height: 40px;">English</button>
+        <button id="Japanese_button" style="font-size: 20px; height: 40px;">日本語</button>
+        <button id="Chinece_button" style="font-size: 20px; height: 40px;">中文</button>
+        <button id="Korean_button" style="font-size: 20px; height: 40px;">한국어</button>
         <table border="1" style="margin-top: 20px; margin-left: 50px; text-align: center;">
             <tr>
                 <th style="width: 350px; font-size: 2rem; background-color: #545454;">商品名</th><th style="width: 150px; font-size: 20px; background-color: #545454;">価格</th><th style="width: 80px; font-size: 15px; background-color: #545454;">数量</th>
@@ -58,18 +58,18 @@
         <button style="width: 250px; height: 50px; position: relative; left: 660px; bottom: 340px; font-size: 35px;">呼び出し/会計</button>
     </div>
     <script>
-        function Ja_tra() {
-            location.replace("https://iamtroc.github.io/japanese/japanese.html");
-        }
-        function Eng_tra() {
+        document.getElementById("English_button").addEventListener("click", function () {
             location.replace("https://iamtroc.github.io/tablet/english.html");
-        }
-        function Ko_tra() {
-            location.replace("https://iamtroc.github.io/tablet/korea.html");
-        }
-        function Chi_tra() {
-            location.replace("https://iamtroc.github.io/tablet/chinece.html");
-        }
+        }, false);
+        document.getElementById("Japanese_button").addEventListener("click", function () {
+            location.replace("https://iamtroc.github.io/tablet/japanese.html");
+        }, false);
+        document.getElementById("Chinece_button").addEventListener("click", function () {
+            location.replace("https://techacademy.jp/");
+        }, false);
+        document.getElementById("Korean_button").addEventListener("click", function () {
+            location.replace("https://techacademy.jp/");
+        }, false);
     </script>
 </body>
 </html>
